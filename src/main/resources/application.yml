@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ofd-server
+  mvc:
+    static-path-pattern: /files/**
+  resources:
+    static-locations: file:/opt/data/
+
+server:
+  compression:
+    enabled: true
+  port: 8100
+  session:
+    timeout: 60
+
+filepath:
+  local: /opt/data/
+  temp: /opt/data/temp/
+  uri: /files/**
+  url-base: http://syb.ququ.im:8100/files/
+
+seal:
+  p12:  /opt/data/USER.p12
+  esl:  /opt/data/UserV4.esl
+  password: 777777
+
+logging:
+  level:
+    com.ququ.ofd-server: debug
+  config: classpath:logback.xml
+
