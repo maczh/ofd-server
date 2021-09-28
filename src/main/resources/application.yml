@@ -17,7 +17,7 @@ filepath:
   local: /opt/data/
   temp: /opt/data/temp/
   uri: /files/**
-  url-base: http://syb.ququ.im:8100/files/
+  url-base: http://127.0.0.1:8100/files/
 
 seal:
   p12:  /opt/data/USER.p12
